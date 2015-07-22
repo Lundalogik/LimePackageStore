@@ -1,0 +1,69 @@
+{
+    "name": "Pattern 3B",
+    "author":"FER",
+    "status":"Development",
+    "shortDesc":"Install pattern 3B",
+    "versions":[
+        {
+            "version":"0.1",
+            "date":"2015-04-16",
+            "comments":"First test"
+        }
+    ],
+    "dependencies":{
+
+    },
+    "install": {
+
+        "vba": [
+            {
+                "relPath": "Pattern_3b.cls",
+                "name": "Pattern_3b"
+            }
+        ],
+        "tables": [
+            {
+                "name": "business",
+                "localname": {
+                    "sv": "Affär",
+                    "en-us": "Business"
+                },
+                "fields": [
+                    {
+                        "name": "need",
+                        "type": "yesno",
+                        "localname": {
+                            "sv": "Behov",
+                            "en-us": "Need"
+                        },
+                        "attributes": {
+                            "defaultvalue": "0"   
+                        }
+                    },
+                     {
+                        "name": "decisionmaker",
+                        "type": "yesno",
+                        "localname": {
+                            "sv": "Belsutsfattare",
+                            "en-us": "Decisionmaker"
+                        },
+                        "attributes": {
+                            "defaultvalue": "0"
+                        }
+                    },
+                    {
+                        "name": "budget",
+                        "type": "yesno",
+                        "localname": {
+                            "sv": "Budget",
+                            "en-us": "Budget"
+                        },
+                        "attributes": {
+                            "defaultvalue": "0"   
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
