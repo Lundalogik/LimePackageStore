@@ -31,287 +31,287 @@
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_addfixedfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_addfixedfields.sql",
 				"name": "csp_easytopro_addfixedfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_addfixedrelationfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_addfixedrelationfields.sql",
 				"name": "csp_easytopro_addfixedrelationfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_addoptions.sql"
+				"relPath": "Install/SQL/csp_easytopro_addoptions.sql",
 				"name": "csp_easytopro_addoptions",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_addrelation.sql"
+				"relPath": "Install/SQL/csp_easytopro_addrelation.sql",
 				"name": "csp_easytopro_addrelation",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_addsuperfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_addsuperfields.sql",
 				"name": "csp_easytopro_addsuperfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_addsuperfieldsto_easy__fieldmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_addsuperfieldsto_easy__fieldmapping.sql",
 				"name": "csp_easytopro_addsuperfieldsto_easy__fieldmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_archive.sql"
+				"relPath": "Install/SQL/csp_easytopro_archive.sql",
 				"name": "csp_easytopro_archive",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_checkrequiredtables.sql"
+				"relPath": "Install/SQL/csp_easytopro_checkrequiredtables.sql",
 				"name": "csp_easytopro_checkrequiredtables",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_contact.sql"
+				"relPath": "Install/SQL/csp_easytopro_contact.sql",
 				"name": "csp_easytopro_contact",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_create_easy__fieldmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_create_easy__fieldmapping.sql",
 				"name": "csp_easytopro_create_easy__fieldmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_create_easy__optionmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_create_easy__optionmapping.sql",
 				"name": "csp_easytopro_create_easy__optionmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_create_tableifneeded.sql"
+				"relPath": "Install/SQL/csp_easytopro_create_tableifneeded.sql",
 				"name": "csp_easytopro_create_tableifneeded",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_createandinsertfixedfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_createandinsertfixedfields.sql",
 				"name": "csp_easytopro_createandinsertfixedfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_createmigrationfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_createmigrationfields.sql",
 				"name": "csp_easytopro_createmigrationfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_createtransfertables.sql"
+				"relPath": "Install/SQL/csp_easytopro_createtransfertables.sql",
 				"name": "csp_easytopro_createtransfertables",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_data.sql"
+				"relPath": "Install/SQL/csp_easytopro_data.sql",
 				"name": "csp_easytopro_data",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_endmigration.sql"
+				"relPath": "Install/SQL/csp_easytopro_endmigration.sql",
 				"name": "csp_easytopro_endmigration",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_field.sql"
+				"relPath": "Install/SQL/csp_easytopro_field.sql",
 				"name": "csp_easytopro_field",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_fieldexist.sql"
+				"relPath": "Install/SQL/csp_easytopro_fieldexist.sql",
 				"name": "csp_easytopro_fieldexist",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_fixtimestamps.sql"
+				"relPath": "Install/SQL/csp_easytopro_fixtimestamps.sql",
 				"name": "csp_easytopro_fixtimestamps",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_getdocumentxml.sql"
+				"relPath": "Install/SQL/csp_easytopro_getdocumentxml.sql",
 				"name": "csp_easytopro_getdocumentxml",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_getfieldmappingxml.sql"
+				"relPath": "Install/SQL/csp_easytopro_getfieldmappingxml.sql",
 				"name": "csp_easytopro_getfieldmappingxml",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_gethistoryxml.sql"
+				"relPath": "Install/SQL/csp_easytopro_gethistoryxml.sql",
 				"name": "csp_easytopro_gethistoryxml",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_getoptionmappingxml.sql"
+				"relPath": "Install/SQL/csp_easytopro_getoptionmappingxml.sql",
 				"name": "csp_easytopro_getoptionmappingxml",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_history.sql"
+				"relPath": "Install/SQL/csp_easytopro_history.sql",
 				"name": "csp_easytopro_history",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_include.sql"
+				"relPath": "Install/SQL/csp_easytopro_include.sql",
 				"name": "csp_easytopro_include",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_inserteasyhistory.sql"
+				"relPath": "Install/SQL/csp_easytopro_inserteasyhistory.sql",
 				"name": "csp_easytopro_inserteasyhistory",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_insertsplithistory.sql"
+				"relPath": "Install/SQL/csp_easytopro_insertsplithistory.sql",
 				"name": "csp_easytopro_insertsplithistory",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_link_project_contact.sql"
+				"relPath": "Install/SQL/csp_easytopro_link_project_contact.sql",
 				"name": "csp_easytopro_link_project_contact",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_mergeuser.sql"
+				"relPath": "Install/SQL/csp_easytopro_mergeuser.sql",
 				"name": "csp_easytopro_mergeuser",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_project.sql"
+				"relPath": "Install/SQL/csp_easytopro_project.sql",
 				"name": "csp_easytopro_project",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_rebuildsplithistory.sql"
+				"relPath": "Install/SQL/csp_easytopro_rebuildsplithistory.sql",
 				"name": "csp_easytopro_rebuildsplithistory",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_refs.sql"
+				"relPath": "Install/SQL/csp_easytopro_refs.sql",
 				"name": "csp_easytopro_refs",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_replace_easy__fieldmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_replace_easy__fieldmapping.sql",
 				"name": "csp_easytopro_replace_easy__fieldmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_replace_easy__optionmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_replace_easy__optionmapping.sql",
 				"name": "csp_easytopro_replace_easy__optionmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_runsqlonupdate.sql"
+				"relPath": "Install/SQL/csp_easytopro_runsqlonupdate.sql",
 				"name": "csp_easytopro_runsqlonupdate",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_settings.sql"
+				"relPath": "Install/SQL/csp_easytopro_settings.sql",
 				"name": "csp_easytopro_settings",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_splithistory.sql"
+				"relPath": "Install/SQL/csp_easytopro_splithistory.sql",
 				"name": "csp_easytopro_splithistory",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_string.sql"
+				"relPath": "Install/SQL/csp_easytopro_string.sql",
 				"name": "csp_easytopro_string",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_time.sql"
+				"relPath": "Install/SQL/csp_easytopro_time.sql",
 				"name": "csp_easytopro_time",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_todo.sql"
+				"relPath": "Install/SQL/csp_easytopro_todo.sql",
 				"name": "csp_easytopro_todo",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_truncatetransfertables.sql"
+				"relPath": "Install/SQL/csp_easytopro_truncatetransfertables.sql",
 				"name": "csp_easytopro_truncatetransfertables",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_update_easy__fieldmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_update_easy__fieldmapping.sql",
 				"name": "csp_easytopro_update_easy__fieldmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_update_easy__optionmapping.sql"
+				"relPath": "Install/SQL/csp_easytopro_update_easy__optionmapping.sql",
 				"name": "csp_easytopro_update_easy__optionmapping",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_updatefixedrelationfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_updatefixedrelationfields.sql",
 				"name": "csp_easytopro_updatefixedrelationfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_updatesuperfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_updatesuperfields.sql",
 				"name": "csp_easytopro_updatesuperfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_user.sql"
+				"relPath": "Install/SQL/csp_easytopro_user.sql",
 				"name": "csp_easytopro_user",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_validate_field.sql"
+				"relPath": "Install/SQL/csp_easytopro_validate_field.sql",
 				"name": "csp_easytopro_validate_field",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_validate_option.sql"
+				"relPath": "Install/SQL/csp_easytopro_validate_option.sql",
 				"name": "csp_easytopro_validate_option",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_validate_requiredfields.sql"
+				"relPath": "Install/SQL/csp_easytopro_validate_requiredfields.sql",
 				"name": "csp_easytopro_validate_requiredfields",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_validatetable.sql"
+				"relPath": "Install/SQL/csp_easytopro_validatetable.sql",
 				"name": "csp_easytopro_validatetable",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/csp_easytopro_validate_easydata.sql"
+				"relPath": "Install/SQL/csp_easytopro_validate_easydata.sql",
 				"name": "csp_easytopro_validate_easydata",
 				"type": "procedure"
 			},
 			{
-				"relPath": "Install/SQL/cfn_easytopro_formathistorydate.sql"
+				"relPath": "Install/SQL/cfn_easytopro_formathistorydate.sql",
 				"name": "cfn_easytopro_formathistorydate",
 				"type": "function"
 			},
 			{
-				"relPath": "Install/SQL/cfn_easytopro_geteasydatatypetext.sql"
+				"relPath": "Install/SQL/cfn_easytopro_geteasydatatypetext.sql",
 				"name": "cfn_easytopro_geteasydatatypetext",
 				"type": "function"
 			},
 			{
-				"relPath": "Install/SQL/cfn_easytopro_geteasyprofieldtype.sql"
+				"relPath": "Install/SQL/cfn_easytopro_geteasyprofieldtype.sql",
 				"name": "cfn_easytopro_geteasyprofieldtype",
 				"type": "function"
 			},
 			{
-				"relPath": "Install/SQL/cfn_easytopro_getidcategoryhistorytype.sql"
+				"relPath": "Install/SQL/cfn_easytopro_getidcategoryhistorytype.sql",
 				"name": "cfn_easytopro_getidcategoryhistorytype",
 				"type": "function"
 			},
 			{
-				"relPath": "Install/SQL/cfn_easytopro_validatehistorylength.sql"
+				"relPath": "Install/SQL/cfn_easytopro_validatehistorylength.sql",
 				"name": "cfn_easytopro_validatehistorylength",
 				"type": "function"
 			}
