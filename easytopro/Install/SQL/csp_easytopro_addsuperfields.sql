@@ -64,6 +64,7 @@ AS
             BEGIN
                 SET @length = NULL
                 SET @isnullable = 0
+                SET @idcategory = NULL
 				
                 IF ( @easyprofieldtype = 1 OR @easyprofieldtype = 12 ) -- Textfield or linkfield
                     --Set length of textfield by checking how many characters are actually used (and add some extra). If no data is found, use default value 32
