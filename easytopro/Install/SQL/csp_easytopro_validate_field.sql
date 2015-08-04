@@ -89,9 +89,9 @@ AS
                                                     AND e2.[idfieldmapping] != e.[idfieldmapping]
                                                     AND e2.[active] = 1
                                                     AND l.[fieldname] IS NOT NULL
-                                                    AND e.[easyfieldtype] <> 6
-                                                    AND e.[easyfieldtype] <> 7 
-                                                    AND e.[easyfieldtype] = e2.[easyfieldtype])
+                                                    AND ((e.[easyfieldtype] <> 6
+                                                    AND e.[easyfieldtype] <> 7 )
+                                                    OR e.[easyfieldtype] = e2.[easyfieldtype]))
                              THEN REPLACE(REPLACE(N'LIME Pro table ''#1#'', field ''#2#'': Existing Pro Field mapped more than once.',
                                                   N'#1#', e.[protable]),
                                           N'#2#', e.[profieldname])
