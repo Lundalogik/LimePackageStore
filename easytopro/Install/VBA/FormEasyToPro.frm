@@ -120,8 +120,8 @@ Private Sub btn_LoadMapping_Click()
             Loop
             Close #1
             
-            Dim startPos As Integer
-            Dim endPos As Integer
+            Dim startPos As Long
+            Dim endPos As Long
             
             startPos = InStr(strFullXML, "[BEGIN FIELDMAPPING]") + VBA.Len("[BEGIN FIELDMAPPING]")
             endPos = InStr(strFullXML, "[END FIELDMAPPING]")
@@ -972,11 +972,11 @@ Private Sub btn_ImportDocuments_Click()
         End If
         
         If Application.Database.Classes.Exists(tb_archive.Text) = False Then
-            Call Lime.MessageBox("Table %1 don´t exists.", VBA.vbExclamation, tb_archive.Text)
+            Call Lime.MessageBox("Table %1 donÂ´t exists.", VBA.vbExclamation, tb_archive.Text)
             Exit Sub
         End If
         If Application.Database.Classes(tb_archive.Text).Fields.Exists(tb_documentfield.Text) = False Then
-            Call Lime.MessageBox("Document field %1 don´t exist in table %2.", VBA.vbExclamation, tb_documentfield.Text, tb_archive.Text)
+            Call Lime.MessageBox("Document field %1 donÂ´t exist in table %2.", VBA.vbExclamation, tb_documentfield.Text, tb_archive.Text)
             Exit Sub
         End If
         
@@ -1442,7 +1442,7 @@ ErroHandler:
 End Function
 
 
-Public Sub FillOptions(ByRef Combo As MSForms.ComboBox, ByRef oOptions As LDE.options, Optional ByVal sDefaultid As String = "§§", Optional ByRef dicExcludeList As Scripting.Dictionary)
+Public Sub FillOptions(ByRef Combo As MSForms.ComboBox, ByRef oOptions As LDE.options, Optional ByVal sDefaultid As String = "Â§Â§", Optional ByRef dicExcludeList As Scripting.Dictionary)
     On Error GoTo Errorhandler
     
     Dim oOption As LDE.Option
@@ -1464,8 +1464,8 @@ Public Sub FillOptions(ByRef Combo As MSForms.ComboBox, ByRef oOptions As LDE.op
                 .AddItem oOption.Text
                 .List(.ListCount - 1, 1) = oOption.Value
                 
-                'Om det skickats med ett standardvärde
-                If VBA.StrComp(sDefaultid, "§§", VBA.vbTextCompare) <> 0 And VBA.CStr(oOption.Value) = sDefaultid Then
+                'Om det skickats med ett standardvÃ¤rde
+                If VBA.StrComp(sDefaultid, "Â§Â§", VBA.vbTextCompare) <> 0 And VBA.CStr(oOption.Value) = sDefaultid Then
                     .ListIndex = .ListCount - 1
                     .Tag = .ListIndex
                 End If
