@@ -1,0 +1,23 @@
+{
+    "name": "VBA-xml",
+    "author": "timhall",
+    "status": "Release",
+    "shortDesc": "Handel XML i VBA",
+    "source":"https://github.com/VBA-tools/VBA-XML/archive/master.zip",
+    "docSource": "https://raw.githubusercontent.com/VBA-tools/VBA-XML/master/readme.md",
+    "versions":[
+    		{
+    			"version": 1.0,
+    			"info": "Added to appstore",
+    			"date": "2015-10-08"
+    		}
+    	],
+    "install": {
+        "vba": [
+            {
+                "relPath": "XMLConverter.bas",
+                "name": "XMLConverter"
+            }
+        ]
+    }
+}
