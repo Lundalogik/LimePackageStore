@@ -7,7 +7,7 @@
     "docSource": "https://raw.githubusercontent.com/VBA-tools/VBA-XML/master/readme.md",
     "versions":[
     		{
-    			"version": 1.0,
+    			"version": "1.0",
     			"info": "Added to appstore",
     			"date": "2015-10-08"
     		}
