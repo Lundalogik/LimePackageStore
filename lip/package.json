@@ -1,0 +1,27 @@
+{
+    "name": "lip",
+    "author": "FPE, FER, JSP",
+    "status": "Release",
+    "shortDesc": "A package manager for LIME Pro",
+    "docSource":"https://raw.githubusercontent.com/Lundalogik/lip/master/README.md",
+    "versions": [
+        {
+            "version": "0.1",
+            "date": "2015-09-08",
+            "comments": "First beta of LIP"
+        },
+
+    ],
+    "dependencies":{
+      "vba_json":"1.0"
+    },
+    "install": {
+        "downloadPath":"https://github.com/Lundalogik/lip/archive/master.zip",
+        "vba": [
+            {
+                "relPath": "vba/lip.bas",
+                "name": "lip"
+            }
+        ]
+    }
+}
