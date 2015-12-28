@@ -1,19 +1,19 @@
 CREATE PROCEDURE [dbo].[csp_easytopro_archive]
     @@xml AS NVARCHAR(MAX) ,
-    @@rebuildtable AS BIT,
-    @@documentpath AS NVARCHAR(MAX) = ''
+    @@rebuildtable AS BIT
+    --@@documentpath AS NVARCHAR(MAX) = ''
 AS 
     BEGIN
 	-- FLAG_EXTERNALACCESS --
         SET NOCOUNT ON;
         DECLARE @iXML INT
         
-        -- Delete spaces and add backslash to documentpath
-        SET @@documentpath = LTRIM(RTRIM(@@documentpath))
-		IF(RIGHT(@@documentpath,1) <> '\' AND @@documentpath <> '')
-		BEGIN
-			SET @@documentpath = @@documentpath + '\'
-		END
+  --      -- Delete spaces and add backslash to documentpath
+  --      SET @@documentpath = LTRIM(RTRIM(@@documentpath))
+		--IF(RIGHT(@@documentpath,1) <> '\' AND @@documentpath <> '')
+		--BEGIN
+		--	SET @@documentpath = @@documentpath + '\'
+		--END
 
         IF ( @@rebuildtable = 1 ) 
             BEGIN
@@ -57,8 +57,9 @@ AS
                 SELECT  [type] ,
                         [key1] ,
                         [key2] ,
-                        -- Only add documentpath if filename is missing path
-                        CASE WHEN [path] LIKE '%:\%' OR [path] LIKE '%\\%' THEN [path] ELSE @@documentpath + [path] END ,
+                        ---- Only add documentpath if filename is missing path
+                        --CASE WHEN [path] LIKE '%:\%' OR [path] LIKE '%\\%' THEN [path] ELSE @@documentpath + [path] END ,
+                        [path] ,
                         CASE WHEN [date] = N'' THEN NULL ELSE CAST([date] AS DATETIME) END ,
                         [time] ,
                         [comment] ,

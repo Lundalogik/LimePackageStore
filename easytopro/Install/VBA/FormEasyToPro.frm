@@ -28,6 +28,7 @@ Attribute VB_Exposed = False
 
 
 
+
 Option Explicit
 
 
@@ -86,18 +87,18 @@ Errorhandler:
     Call UI.ShowError("FormEasyToPro.btn_companyhistory_Click")
 End Sub
 
-Private Sub btn_documentpath_Click()
-  On Error GoTo Errorhandler
-    Dim oDocumentpath As New LCO.FolderDialog
-    oDocumentpath.Text = "Select documentpath"
-    If oDocumentpath.show = 1 Then
-        tb_documentpath = oDocumentpath.Folder
-    End If
-    Set oDocumentpath = Nothing
-    Exit Sub
-Errorhandler:
-    Call UI.ShowError("FormEasyToPro.btn_documentpath_Click")
-End Sub
+'Private Sub btn_documentpath_Click()
+'  On Error GoTo Errorhandler
+'    Dim oDocumentpath As New LCO.FolderDialog
+'    oDocumentpath.Text = "Select documentpath"
+'    If oDocumentpath.show = 1 Then
+'        tb_documentpath = oDocumentpath.Folder
+'    End If
+'    Set oDocumentpath = Nothing
+'    Exit Sub
+'Errorhandler:
+'    Call UI.ShowError("FormEasyToPro.btn_documentpath_Click")
+'End Sub
 
 Private Sub btn_LoadMapping_Click()
     On Error GoTo Errorhandler
@@ -1018,7 +1019,8 @@ Private Sub btn_loadeasydata_Click()
         For i = LBound(vTables) To UBound(vTables)
             If bContinue = True Then
                 If VBA.Len(vTables(i)) > 0 Then
-                    bContinue = GetEasyTable(VBA.CStr(vTables(i)), tb_easydatabasepath, Me.lb_progress, IIf(check_documentpath.Value, tb_documentpath, ""))
+                    'bContinue = GetEasyTable(VBA.CStr(vTables(i)), tb_easydatabasepath, Me.lb_progress, IIf(check_documentpath.Value, tb_documentpath, ""))
+                    bContinue = GetEasyTable(VBA.CStr(vTables(i)), tb_easydatabasepath, Me.lb_progress)
                 End If
             End If
         Next i
@@ -1325,19 +1327,19 @@ Errorhandler:
     Call UI.ShowError("FormEasyToPro.check_contact_Click")
 End Sub
 
-Private Sub check_documentpath_Click()
-On Error GoTo Errorhandler
-    If check_documentpath.Value = True Then
-        tb_documentpath.Enabled = True
-        btn_documentpath.Enabled = True
-    Else
-        tb_documentpath.Enabled = False
-        btn_documentpath.Enabled = False
-    End If
-Exit Sub
-Errorhandler:
-    Call UI.ShowError("FormEasyToPro.check_documentpath_Click")
-End Sub
+'Private Sub check_documentpath_Click()
+'On Error GoTo Errorhandler
+'    If check_documentpath.Value = True Then
+'        tb_documentpath.Enabled = True
+'        btn_documentpath.Enabled = True
+'    Else
+'        tb_documentpath.Enabled = False
+'        btn_documentpath.Enabled = False
+'    End If
+'Exit Sub
+'Errorhandler:
+'    Call UI.ShowError("FormEasyToPro.check_documentpath_Click")
+'End Sub
 
 Private Sub check_history_Click()
     On Error GoTo Errorhandler

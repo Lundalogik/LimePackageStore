@@ -1998,7 +1998,7 @@ Errorhandler:
 End Function
 
 
-Public Function GetEasyTable(sEasyTable As String, sDatabasePath As String, oLabel As MSForms.label, Optional sDocumentPath As String = "") As Boolean
+Public Function GetEasyTable(sEasyTable As String, sDatabasePath As String, oLabel As MSForms.label) As Boolean
     On Error GoTo Errorhandler
     
     Dim SQL As String
@@ -2158,9 +2158,9 @@ Public Function GetEasyTable(sEasyTable As String, sDatabasePath As String, oLab
                 If Not proc Is Nothing Then
                     proc.Parameters("@@xml").InputValue = objDOM.XML
                     proc.Parameters("@@rebuildtable").InputValue = iRebuild
-                    If sEasyTable = "ARCHIVE" Then
-                        proc.Parameters("@@documentpath").InputValue = sDocumentPath
-                    End If
+'                    If sEasyTable = "ARCHIVE" Then
+'                        proc.Parameters("@@documentpath").InputValue = sDocumentPath
+'                    End If
                     
                     proc.Timeout = cTIMEOUT
                     
@@ -2188,9 +2188,9 @@ Public Function GetEasyTable(sEasyTable As String, sDatabasePath As String, oLab
             If Not proc Is Nothing Then
                 proc.Parameters("@@xml").InputValue = objDOM.XML
                 proc.Parameters("@@rebuildtable").InputValue = iRebuild
-                If sEasyTable = "ARCHIVE" Then
-                    proc.Parameters("@@documentpath").InputValue = sDocumentPath
-                End If
+'                If sEasyTable = "ARCHIVE" Then
+'                    proc.Parameters("@@documentpath").InputValue = sDocumentPath
+'                End If
                 
                 proc.Timeout = cTIMEOUT
                 
