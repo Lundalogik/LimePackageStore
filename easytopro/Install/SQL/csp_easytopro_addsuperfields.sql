@@ -20,6 +20,7 @@ AS
         DECLARE @fi NVARCHAR(64)
         DECLARE @da NVARCHAR(64)
         DECLARE @length INT
+        DECLARE @width INT
         DECLARE @easyprofieldtype INT
         DECLARE @relatedtable NVARCHAR(64)
         DECLARE @isnullable INT
@@ -63,13 +64,17 @@ AS
             AND @@errormessage = N'' 
             BEGIN
                 SET @length = NULL
+                SET @width = NULL
                 SET @isnullable = 0
                 SET @idcategory = NULL
 				
                 IF ( @easyprofieldtype = 1 OR @easyprofieldtype = 12 ) -- Textfield or linkfield
                     --Set length of textfield by checking how many characters are actually used (and add some extra). If no data is found, use default value 32
                     SET @length = ISNULL((SELECT TOP 1 LEN(Data) FROM EASY__DATA WHERE [Field ID]=@easyfieldid ORDER BY LEN(data) DESC) + 10,32)
-                    
+                
+                --Get width from EASY__FIELD and adjust it to match width in Pro: (Easywidth + 1) * 3
+                SET @width = ((SELECT TOP 1 [Field width] FROM EASY__FIELD WHERE [Field ID]=@easyfieldid) + 1) * 3
+                
                 IF ( @easyprofieldtype IN ( 3, 4, 7, 16 ) ) 
                     SET @isnullable = 1
 					
@@ -102,6 +107,7 @@ AS
                                             @@no = @no, @@fi = @fi,
                                             @@da = @da,
                                             @@length = @length,
+                                            @@width = @width,
                                             @@errormessage = @@errormessage OUTPUT,
                                             @@idcategory = @idcategory OUTPUT
                                     END
