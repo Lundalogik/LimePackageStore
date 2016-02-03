@@ -1,0 +1,197 @@
+{
+    "name": "Localize table",
+    "author":"Jonny Springare",
+    "status":"Development",
+    "shortDesc":"Includes localize table and fields",
+    "versions":[
+            {
+            "version":"1",
+            "date":"2016-02-03",
+            "comments":"First version"
+        }
+    ],
+    "install": {
+        "tables": [
+            {
+                "name": "localize",
+                "localname_singular": 
+                {
+                    "sv": "Översättning",
+					"en_us": "Localization",
+					"da": "Oversættelse",
+					"no": "Oversettelse",
+					"fi": "Tekstikoodi"
+                },
+                "localname_plural": 
+                {
+                    "sv": "Översättning",
+					"en_us": "Localization",
+					"da": "Oversættelse",
+					"no": "Oversettelse",
+					"fi": "Tekstikoodi"
+                },
+				"attributes": {
+					"invisible": "2",
+					"descriptive": "[localize].[owner]"
+				}
+                "fields": [
+                    {
+                        "name": "owner",
+                        "localname": {
+							"sv": "Ägare",
+							"en_us": "Owner",
+							"da": "Ejer",
+							"no": "Eier",
+							"fi": "Omistaja"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"length": "64",
+							"width": "6"
+                        }
+                    },
+                    {
+                        "name": "code",
+                        "localname": {
+							"sv": "Textkod",
+							"en_us": "Textcode",
+							"da": "Textcode",
+							"no": "Tekstkode",
+							"fi": "Tekstikoodi"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"width": "6"
+                        }
+                    },
+                    {
+                        "name": "lookupcode",
+                        "localname": {
+							"sv": "VBA Lookup code",
+							"en_us": "VBA Lookup code",
+							"da": "VBA Lookup code",
+							"no": "VBA Lookup code",
+							"fi": "VBA Lookup code"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"width": "6",
+							"newline": "3",
+							"length": "128",
+							"limereadonly": "1",
+							"onsqlupdate": "N'Localize.GetText(\"' + [localize].[owner] + N'\", \"' + [localize].[code] + N'\")'"
+                        }
+                    },
+                    {
+                        "name": "formtag",
+                        "localname": {
+							"sv": "VBA Formulär-tag",
+							"en_us": "VBA Form tag",
+							"da": "VBA Form tag",
+							"no": "VBA Form tag",
+							"fi": "VBA Form tag"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"width": "6",
+							"length": "256",
+							"limereadonly": "1",
+							"onsqlupdate": "N'<localize owner=\"' + [localize].[owner] + N'\" code=\"' + [localize].[code] + N'\"/>'"
+                        }
+                    },
+                    {
+                        "name": "context",
+                        "localname": {
+							"sv": "Kontext",
+							"en_us": "Context",
+							"da": "Kontekst",
+							"no": "Kontekst",
+							"fi": "Sisältö"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"width": "12",
+							"length": "512",
+							"newline": "3"
+                        }
+                    },
+                    {
+                        "name": "sv",
+                        "localname": {
+							"sv": "Svenska",
+							"en_us": "Swedish",
+							"da": "Svensk",
+							"no": "sv",
+							"fi": "sv"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"newline": "1",
+							"height": "2"
+                        }
+                    },
+                    {
+                        "name": "en_us",
+                        "localname": {
+							"sv": "Engelska",
+							"en_us": "English",
+							"da": "Engelsk",
+							"no": "en_us",
+							"fi": "en_us"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"newline": "1",
+							"height": "2"
+                        }
+                    },
+                    {
+                        "name": "no",
+                        "localname": {
+							"sv": "Norska",
+							"en_us": "Norwegian",
+							"da": "Norsk",
+							"no": "no",
+							"fi": "no"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"newline": "1",
+							"height": "2"
+                        }
+                    },
+                    {
+                        "name": "da",
+                        "localname": {
+							"sv": "Danska",
+							"en_us": "Danish",
+							"da": "da",
+							"no": "da",
+							"fi": "da"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"newline": "1",
+							"height": "2"
+                        }
+                    },
+                    {
+                        "name": "fi",
+                        "localname": {
+							"sv": "Finska",
+							"en_us": "Finnish",
+							"da": "Finsk",
+							"no": "fi",
+							"fi": "fi"
+                        }, 
+                        "attributes": {
+                            "fieldtype": "string",
+							"newline": "1",
+							"height": "2"
+                        }
+                    },
+                ]
+            }
+		]
+    }
+}
