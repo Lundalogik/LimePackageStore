@@ -33,7 +33,7 @@
 				"attributes": {
 					"invisible": "2",
 					"descriptive": "[localize].[owner]"
-				}
+				},
                 "fields": [
                     {
                         "name": "owner",
@@ -189,7 +189,7 @@
 							"newline": "1",
 							"height": "2"
                         }
-                    },
+                    }
                 ]
             }
 		]
