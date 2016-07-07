@@ -2067,7 +2067,7 @@ Public Function GetEasyTable(sEasyTable As String, sDatabasePath As String, oLab
 '    Set oAddressParser = CreateObject("LLADR01.AddressParser")
     
     
-    ' Hämtar ut data från Easy
+    ' HÃ¤mtar ut data frÃ¥n Easy
     Set rsmain = Db.Execute(SQL)
     
     ' Skapar XML-dokument
@@ -2423,16 +2423,16 @@ On Error GoTo Errorhandler
 
                 If VBA.Len(VBA.Trim(sNextLine)) > 0 Then
                     vRow = VBA.Split(sNextLine, VBA.vbTab, , vbBinaryCompare)
-                        If UBound(vRow) = (9 + iExtraColumn) And VBA.IsNumeric(vRow(0)) Then
+                        If UBound(vRow) = (10 + iExtraColumn) And VBA.IsNumeric(vRow(0)) Then
                             sXML = sXML + "<row " & _
                                     "type=""" + VBA.CStr(iType) + """ " & _
                                     "historyid=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(0))) + """ " & _
                                     "powersellid=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(2))) + """ " & _
-                                    "date=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(3))) + """ " & _
-                                    "signature=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(4))) + """ " & _
-                                    "category=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(6))) + """ " & _
-                                    "reference=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(7))) + """ " & _
-                                    "rawhistory=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(9 + iExtraColumn))) + """ " & _
+                                    "date=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(3)) + " " + VBA.Trim(vRow(4))) + """ " & _
+                                    "signature=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(5))) + """ " & _
+                                    "category=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(7))) + """ " & _
+                                    "reference=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(8))) + """ " & _
+                                    "rawhistory=""" + ReplaceIllegalCharactersHistoryXML(VBA.Trim(vRow(10 + iExtraColumn))) + """ " & _
                                     "/>"
                             iCount = iCount + 1
                             lngCount = lngCount + 1
