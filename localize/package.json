@@ -74,12 +74,12 @@
 				"fi": "VBA Lookup code"
                         }, 
                         "attributes": {
-                            "fieldtype": "string",
-					"width": "6",
-					"newline": "3",
-					"length": "128",
-					"limereadonly": "1",
-					"onsqlupdate": "N'Localize.GetText(\"' + [localize].[owner] + N'\", \"' + [localize].[code] + N'\")'"
+                        	"fieldtype": "string",
+                        	"width": "6",
+                        	"newline": "3",
+                        	"length": "128",
+                        	"limereadonly": "1",
+                        	"onsqlupdate": "N'Localize.GetText(\"' + [localize].[owner] + N'\", \"' + [localize].[code] + N'\")'"
                         }
                     },
                     {
@@ -102,96 +102,96 @@
                     {
                         "name": "context",
                         "localname": {
-							"sv": "Kontext",
-							"en_us": "Context",
-							"da": "Kontekst",
-							"no": "Kontekst",
-							"fi": "Sisältö"
+                        	"sv": "Kontext",
+                        	"en_us": "Context",
+                        	"da": "Kontekst",
+                        	"no": "Kontekst",
+                        	"fi": "Sisältö"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"width": "12",
-							"length": "512",
-							"newline": "3"
+                            "width": "12",
+                            "length": "512",
+                            "newline": "3"
                         }
                     },
                     {
                         "name": "sv",
                         "localname": {
-							"sv": "Svenska",
-							"en_us": "Swedish",
-							"da": "Svensk",
-							"no": "sv",
-							"fi": "sv"
+                        	"sv": "Svenska",
+                        	"en_us": "Swedish",
+                        	"da": "Svensk",
+                        	"no": "sv",
+                        	"fi": "sv"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"newline": "1",
-							"height": "2"
+                            "newline": "1",
+                            "height": "2"
                         }
                     },
                     {
                         "name": "en_us",
                         "localname": {
-							"sv": "Engelska",
-							"en_us": "English",
-							"da": "Engelsk",
-							"no": "en_us",
-							"fi": "en_us"
+                        	"sv": "Engelska",
+                        	"en_us": "English",
+                        	"da": "Engelsk",
+                        	"no": "en_us",
+                        	"fi": "en_us"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"newline": "1",
-							"height": "2"
+                            "newline": "1",
+                            "height": "2"
                         }
                     },
                     {
                         "name": "no",
                         "localname": {
-							"sv": "Norska",
-							"en_us": "Norwegian",
-							"da": "Norsk",
-							"no": "no",
-							"fi": "no"
+                        	"sv": "Norska",
+                        	"en_us": "Norwegian",
+                        	"da": "Norsk",
+                        	"no": "no",
+                        	"fi": "no"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"newline": "1",
-							"height": "2"
+                            "newline": "1",
+                            "height": "2"
                         }
                     },
                     {
                         "name": "da",
                         "localname": {
-							"sv": "Danska",
-							"en_us": "Danish",
-							"da": "da",
-							"no": "da",
-							"fi": "da"
+                        	"sv": "Danska",
+                        	"en_us": "Danish",
+                        	"da": "da",
+                        	"no": "da",
+                        	"fi": "da"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"newline": "1",
-							"height": "2"
+                            "newline": "1",
+                            "height": "2"
                         }
                     },
                     {
                         "name": "fi",
                         "localname": {
-							"sv": "Finska",
-							"en_us": "Finnish",
-							"da": "Finsk",
-							"no": "fi",
-							"fi": "fi"
+                        	"sv": "Finska",
+                        	"en_us": "Finnish",
+                        	"da": "Finsk",
+                        	"no": "fi",
+                        	"fi": "fi"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"newline": "1",
-							"height": "2"
+                            "newline": "1",
+                            "height": "2"
                         }
                     }
                 ]
             }
-		]
+            ]
     }
 }
