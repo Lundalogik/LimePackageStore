@@ -17,86 +17,86 @@
                 "localname_singular": 
                 {
                     "sv": "Översättning",
-					"en_us": "Localization",
-					"da": "Oversættelse",
-					"no": "Oversettelse",
-					"fi": "Tekstikoodi"
+			"en_us": "Localization",
+			"da": "Oversættelse",
+			"no": "Oversettelse",
+			"fi": "Tekstikoodi"
                 },
                 "localname_plural": 
                 {
                     "sv": "Översättning",
-					"en_us": "Localization",
-					"da": "Oversættelse",
-					"no": "Oversettelse",
-					"fi": "Tekstikoodi"
+			"en_us": "Localization",
+			"da": "Oversættelse",
+			"no": "Oversettelse",
+			"fi": "Tekstikoodi"
                 },
-				"attributes": {
-					"invisible": "2",
-					"descriptive": "[localize].[owner]"
-				},
+			"attributes": {
+				"invisible": "2",
+				"descriptive": "[localize].[owner]"
+			},
                 "fields": [
                     {
                         "name": "owner",
                         "localname": {
-							"sv": "Ägare",
-							"en_us": "Owner",
-							"da": "Ejer",
-							"no": "Eier",
-							"fi": "Omistaja"
+				"sv": "Ägare",
+				"en_us": "Owner",
+				"da": "Ejer",
+				"no": "Eier",
+				"fi": "Omistaja"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"length": "64",
-							"width": "6"
+				"length": "64",
+				"width": "6"
                         }
                     },
                     {
                         "name": "code",
                         "localname": {
-							"sv": "Textkod",
-							"en_us": "Textcode",
-							"da": "Textcode",
-							"no": "Tekstkode",
-							"fi": "Tekstikoodi"
+				"sv": "Textkod",
+				"en_us": "Textcode",
+				"da": "Textcode",
+				"no": "Tekstkode",
+				"fi": "Tekstikoodi"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"width": "6"
+					"width": "6"
                         }
                     },
                     {
                         "name": "lookupcode",
                         "localname": {
-							"sv": "VBA Lookup code",
-							"en_us": "VBA Lookup code",
-							"da": "VBA Lookup code",
-							"no": "VBA Lookup code",
-							"fi": "VBA Lookup code"
+				"sv": "VBA Lookup code",
+				"en_us": "VBA Lookup code",
+				"da": "VBA Lookup code",
+				"no": "VBA Lookup code",
+				"fi": "VBA Lookup code"
                         }, 
                         "attributes": {
                             "fieldtype": "string",
-							"width": "6",
-							"newline": "3",
-							"length": "128",
-							"limereadonly": "1",
-							"onsqlupdate": "N'Localize.GetText(\"' + [localize].[owner] + N'\", \"' + [localize].[code] + N'\")'"
+					"width": "6",
+					"newline": "3",
+					"length": "128",
+					"limereadonly": "1",
+					"onsqlupdate": "N'Localize.GetText(\"' + [localize].[owner] + N'\", \"' + [localize].[code] + N'\")'"
                         }
                     },
                     {
                         "name": "formtag",
                         "localname": {
-							"sv": "VBA Formulär-tag",
-							"en_us": "VBA Form tag",
-							"da": "VBA Form tag",
-							"no": "VBA Form tag",
-							"fi": "VBA Form tag"
+				"sv": "VBA Formulär-tag",
+				"en_us": "VBA Form tag",
+				"da": "VBA Form tag",
+				"no": "VBA Form tag",
+				"fi": "VBA Form tag"
                         }, 
                         "attributes": {
-                            "fieldtype": "string",
-							"width": "6",
-							"length": "256",
-							"limereadonly": "1",
-							"onsqlupdate": "N'<localize owner=\"' + [localize].[owner] + N'\" code=\"' + [localize].[code] + N'\"/>'"
+                        	"fieldtype": "string",
+                        	"width": "6",
+                        	"length": "256",
+                        	"limereadonly": "1",
+                        	"onsqlupdate": "N'<localize owner=\"' + [localize].[owner] + N'\" code=\"' + [localize].[code] + N'\"/>'"
                         }
                     },
                     {
