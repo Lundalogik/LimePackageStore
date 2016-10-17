@@ -36,6 +36,7 @@ AS
         RETURN @date
 	
     END
+GO
 
 
 IF ( OBJECT_ID('cfn_easytopro_geteasydatatypetext') > 0 )
@@ -77,6 +78,7 @@ AS
                             
         RETURN ISNULL(@result, N'UNKNOWN')
     END
+GO
 
 
 IF ( OBJECT_ID('cfn_easytopro_geteasyprofieldtype') > 0 )
@@ -118,6 +120,7 @@ AS
                             
         RETURN ISNULL(@result, -1)
     END
+GO
 
 
 IF ( OBJECT_ID('cfn_easytopro_getidcategoryhistorytype') > 0 )
@@ -143,6 +146,7 @@ AS
             
         RETURN ISNULL(@idcategory,-1)
     END
+GO
 
 
 IF ( OBJECT_ID('cfn_easytopro_validatehistorylength') > 0 )
@@ -184,6 +188,7 @@ AS
         RETURN ISNULL(@message,N'')
             
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addfield') > 0 )
@@ -292,6 +297,7 @@ AS
             SET @@errormessage = ERROR_MESSAGE()
         END CATCH
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addfixedfields') > 0 )
@@ -408,6 +414,7 @@ AS
             SET @@errormessage = N''
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addfixedrelationfields') > 0 )
@@ -520,6 +527,7 @@ AS
             SET @@errormessage = N''
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addoptions') > 0 )
@@ -674,6 +682,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addrelation') > 0 )
@@ -769,6 +778,7 @@ AS
             SET @@errormessage = ERROR_MESSAGE()
         END CATCH
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addsuperfields') > 0 )
@@ -931,6 +941,7 @@ AS
             SET @@errormessage = N''
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_addsuperfieldsto_easy__fieldmapping') > 0 )
@@ -1160,6 +1171,7 @@ AS
             END
         
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_archive') > 0 )
@@ -1252,6 +1264,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_checkrequiredtables') > 0 )
@@ -1292,6 +1305,7 @@ AS
             END
         SET @@errormessage = ISNULL(@errormessage, N'')
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_contact') > 0 )
@@ -1412,6 +1426,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_createandinsertfixedfields') > 0 )
@@ -1743,6 +1758,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_createmigrationfields') > 0 )
@@ -2712,6 +2728,7 @@ AS
             SET @@errormessage = ERROR_MESSAGE()
         END CATCH
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_createtransfertables') > 0 )
@@ -2774,6 +2791,7 @@ AS
             SET @@errormessage = N''
                 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_create_easy__fieldmapping') > 0 )
@@ -3030,6 +3048,7 @@ AS
             SET @@errormessage = N''
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_create_easy__optionmapping') > 0 )
@@ -3194,6 +3213,7 @@ AS
             
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_create_tableifneeded') > 0 )
@@ -3310,6 +3330,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_data') > 0 )
@@ -3377,6 +3398,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_endmigration') > 0 )
@@ -3470,6 +3492,7 @@ AS
             SET @@errormessage = N''
          
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_field') > 0 )
@@ -3546,6 +3569,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_fieldexist') > 0 )
@@ -3591,6 +3615,7 @@ AS
             
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_fixtimestamps') > 0 )
@@ -3723,6 +3748,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_getdocumentxml') > 0 )
@@ -3755,6 +3781,7 @@ AS
         EXEC sp_executesql @sql
     
     END 
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_getfieldmappingxml') > 0 )
@@ -3823,6 +3850,7 @@ AS
         
             END
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_gethistoryxml') > 0 )
@@ -3859,6 +3887,7 @@ AS
         SELECT  CAST(@xml AS XML)
     
     END 
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_getoptionmappingxml') > 0 )
@@ -3897,6 +3926,7 @@ AS
         
         
     END 
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_history') > 0 )
@@ -3961,6 +3991,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_include') > 0 )
@@ -4013,6 +4044,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_inserteasyhistory') > 0 )
@@ -4322,6 +4354,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_insertsplithistory') > 0 )
@@ -4430,6 +4463,7 @@ AS
             END
           
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_link_project_contact') > 0 )
@@ -4664,6 +4698,7 @@ AS
                 COMMIT TRANSACTION tran_link_project_contact
             END
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_mergeuser') > 0 )
@@ -4903,6 +4938,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_project') > 0 )
@@ -4987,6 +5023,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_rebuildsplithistory') > 0 )
@@ -5022,6 +5059,7 @@ AS
 						  [historyid] INT
                         )
 		END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_refs') > 0 )
@@ -5119,6 +5157,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_replace_easy__fieldmapping') > 0 )
@@ -5191,6 +5230,7 @@ AS
             END
         
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_replace_easy__optionmapping') > 0 )
@@ -5247,6 +5287,7 @@ AS
             END
         
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_runsqlonupdate') > 0 )
@@ -5303,6 +5344,7 @@ AS
             SET @@errormessage = N''
                 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_settings') > 0 )
@@ -5359,6 +5401,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_splithistory') > 0 )
@@ -5700,6 +5743,7 @@ AS
             END
           
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_string') > 0 )
@@ -5753,6 +5797,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_time') > 0 )
@@ -5850,6 +5895,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_todo') > 0 )
@@ -5956,6 +6002,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_truncatetransfertables') > 0 )
@@ -6048,6 +6095,7 @@ AS
             SET @@errormessage = N''
                 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_updatefixedrelationfields') > 0 )
@@ -6325,6 +6373,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_updatesuperfields') > 0 )
@@ -6822,6 +6871,7 @@ AS
         IF ( @@errormessage IS NULL ) 
             SET @@errormessage = N''
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_update_easy__fieldmapping') > 0 )
@@ -6936,6 +6986,7 @@ AS
             END
         
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_update_easy__optionmapping') > 0 )
@@ -7018,6 +7069,7 @@ AS
             SET @@errormessage = N''
         
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_user') > 0 )
@@ -7092,6 +7144,7 @@ AS
 
         EXECUTE sp_xml_removedocument @iXML
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_validatetable') > 0 )
@@ -7151,6 +7204,7 @@ AS
             END
 
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_validate_easydata') > 0 )
@@ -7264,6 +7318,7 @@ AS
     
        
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_validate_field') > 0 )
@@ -7794,6 +7849,7 @@ AS
         --SELECT CAST(@xmltext AS XML)       
                        
     END
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_validate_option') > 0 )
@@ -7852,6 +7908,7 @@ AS
         
         
     END 
+GO
 
 
 IF ( OBJECT_ID('csp_easytopro_validate_requiredfields') > 0 )
@@ -7896,5 +7953,6 @@ AS
         FOR     XML AUTO
         
     END
+GO
 
 
