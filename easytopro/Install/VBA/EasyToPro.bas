@@ -1658,7 +1658,7 @@ Public Function ValidationRequiredFields(Optional lv As Object = Nothing, Option
         If Not oDataNode Is Nothing Then
             If oDataNode.hasChildNodes Then
                 For Each oErrorNode In oDataNode.childNodes
-                    sMessage = Lime.FormatString("Field '%1' in table '%2' is required but is not mapped or is missing a proposed value", oErrorNode.Attributes.getNamedItem("fieldname").Text, oErrorNode.Attributes.getNamedItem("tablename").Text)
+                    sMessage = Lime.FormatString("Field '%1' in table '%2' is required but is not mapped or is missing a proposed value. Please map this field and add a proposed value, or set the field to not required in LISA.", oErrorNode.Attributes.getNamedItem("fieldname").Text, oErrorNode.Attributes.getNamedItem("tablename").Text)
                     If VBA.Len(sMessage) > 0 Then
                         If Not lv Is Nothing Then
                             Set oListItem = lv.ListItems.Add
