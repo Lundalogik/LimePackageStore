@@ -34,49 +34,49 @@
     		{
     			"version": "1.3",
     			"comments": "Updated log. New config solution. Joshua",
-                "date" : ""
+                "date" : "2014-01-01"
 
     		},
     		{
     			"version": "1.2",
     			"comments": "Viewmode viewer implemented. bugfixes",
-                "date" : ""
+                "date" : "2014-01-01"
     		},
     		{
     			"version": "1.1",
     			"comments": "Important bugfixes",
-                "date" : ""
+                "date" : "2014-01-01"
     		},
     		{
     			"version": "1.0",
     			"comments": "The Big 1.0!",
-                "date" : ""
+                "date" : "2014-01-01"
     		},
     		{
     			"version": "0.9",
     			"comments": "Now in Twitter Bootstrap 3.1, Handeling of inline and tab views have been improved",
-                "date" : ""
+                "date" : "2014-01-01"
     		},
     		{
     			"version": "0.8",
     			"comments": "Bugs have been eaten!",
-                "date" : ""
+                "date" : "2014-01-01"
     		},
     		{
     			"version": "0.7",
     			"comments": "Added version checking. If debug is turned on the version of the installed framework is compared with the current version on GitHub. The user is notified and can download a new version. Added a method to the VBA method 'lbsHelper'. If upgrading, replace old version with new",
-                "date" : ""
+                "date" : "2014-01-01"
 
     		},
     		{
     			"version": "0.6",
     			"comments": "Added support for insepctorId param in 10.11, Added global config, removed inline config, Inline config entries in 'comment-style' should be moved to _config.js",
-                "date" : ""
+                "date" : "2014-01-01"
     		},
     		{
     			"version": "0.5",
     			"comments": "Bugfix: The styling of the menu hover-effekt is imporoved, Bugfix: Header icon is now properly aligned",
-                "date" : ""
+                "date" : "2014-01-01"
     		}
     	],
     "install": {
